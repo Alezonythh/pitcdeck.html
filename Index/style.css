@@ -1,0 +1,548 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+
+}
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-color: orangered;
+    border-width: 10px;
+
+}
+  
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+  
+  
+nav ul li a {
+    text-decoration: none;
+    font-family: "Segoe UI", sans-serif;
+    color: #191919;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 68, 0, 0);
+    scroll-behavior: smooth;
+}
+  
+nav ul li a:hover {
+    color: orangered;
+}
+
+    
+    
+nav {
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(to right, rgb(0, 0, 0), orangered);
+    position: fixed;
+    top: 0;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+
+nav .logo {
+    font-size: 1.rem;
+    width: 30%;
+    left: -35px;
+    position: relative;
+    /* top: -18px; */
+}
+
+/* nav .logo img {
+    padding-top: 20px;
+    width: 60px;
+} */
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(78, 71, 71);
+    font-family: Arial;
+    padding: 0px 10px;
+    font-weight: bold;
+    transition: 0.15s;
+}
+
+nav a:hover {
+    color: aliceblue;
+}
+
+.container{
+    width: 100%;
+    height: 670px;
+    background-image: url(item/salad.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    
+}
+.container .hero{
+    width: 90%;
+    margin: auto;
+    height: 500px;
+}
+
+
+.hero .textbox{
+    font-weight: 700;
+    font-size: 50px;
+    display: flex;
+    padding-top: 40px;
+    width: 88%;
+    padding-top: 270px;
+    margin-left: 10px;
+
+}
+
+img {
+    border-radius: 20px;
+}
+.hero .textbox .text{
+    font-weight: 300;
+    font-size: 20px;
+    /* margin-left: auto; */
+}
+
+.hero .Button{
+    display: flex;
+    margin-top: 20px ;
+
+    
+}
+.hero .Button .butext1{
+    background-color: orangered;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+}
+.hero .Button .butext1>a{
+    color: black;
+}
+.hero .Button .butext1:hover{
+    background-color: gray;
+    transition: 0,5s;
+
+}
+
+.container .Services{
+    display: flex;
+    /* background-color: bisque; */
+    margin-top: 12%;
+    justify-content: space-evenly;
+    padding-right: 80px;
+    padding-top: 120px;
+    color: white;
+    line-height: 140%;
+    background-image: url(item/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 650px;
+    text-align: center;
+    line-height: 200%;
+    width: 100%;
+    padding-right: 10%;
+
+}
+
+.container .Services .t1{
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.container .Services .textt {
+    color: orange;
+
+
+
+}
+.container .Services .textt .duy{
+    color: white;
+}
+.container .Services .textt .textttt{
+    color: white;
+
+}
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.container .brr{
+    text-align: center;
+    color: white;
+    background-image: url(rendang.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 650px;
+    
+}
+.container .our{
+    display: grid;
+    grid-template-areas: "area1 area2 area3";
+    grid-template-rows: 1fr 1fr;
+    width: 90%;
+    text-align: center;
+    color: white;
+    justify-content: space-around;
+    margin: auto;
+    padding: auto;
+    gap: -20px;
+    height: 4px;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+
+
+.container .our .colom1{
+    grid-column: area1;
+    background-color: orangered;
+    height: 300PX;
+    margin: 20px;
+    border-radius: 10px;
+    padding-top: 50px;
+    width: 350px;
+
+}
+.container .our .colom2{
+    grid-column: area2;
+    background-color: orangered;
+    height: 300PX;
+    margin: 20px;
+    border-radius: 10px;
+    padding-top: 50px;
+    width: 350px;
+
+}.container .our .colom3{
+    grid-column: area3;
+    background-color: orangered;
+    height: 300PX;
+    margin: 20px;
+    border-radius: 10px;
+    padding-top: 50px;
+    width: 350px;
+}
+.Menu{
+    padding: 0 10px 30px 10px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(350px,1fr)); */
+    grid-gap: 20px 40px;
+}
+.heading{
+    background: orangered;
+    color: white;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+
+}
+.heading>h1{
+    font-weight: 400;
+    font-size: 37px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.heading>h1{
+    line-height: 150%;
+}
+
+.food-item{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    transition: .2s ease-in-out;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.food-item img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    /* cursor: pointer; */
+}
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub>h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.details>p{
+    color: gray;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+.details>button{
+    background: white;
+    /* border: none; */
+    color: orangered;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    /* cursor: pointer; */
+    border-color: orangered;
+}
+
+.button>a {
+    color: #ffffff;
+}
+.gpg{
+    width: 100%;
+    height: 200px;
+    background-image: url(item/salad4.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0;
+    background-attachment: fixed;
+    margin: auto;
+    
+}
+.Menu{
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+.heading{
+    background: orangered;
+    color: white;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.heading>h1{
+    font-weight: 400;
+    font-size: 37px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.heading>h1{
+    line-height: 150%;
+}
+
+.food-item{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    transition: .2s ease-in-out;
+    color: black;
+}
+.food-item img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub>h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.details>p{
+    color: black;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+.details>button{
+    background: orangered;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.button>a {
+    color: #ffffff;
+}
+
+.Menu .heading>a{
+    color: white;
+}
+
+.gpgc{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(189, 72, 18, 0.904);
+    background-repeat: no-repeat;
+    background-position: 0px 0;
+    background-attachment: fixed;
+    margin: auto;
+    display: flex;
+    grid-template-rows: 1fr ;
+    align-items: center;
+}
+
+.gpgc .at{
+    background-color: #ffffff;
+    margin-left: 100px;
+    width: 710px;
+    height: 100px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    border-color: black;
+    border-style: groove;
+
+}
+.gpgc .t{
+    color: black;
+    margin-left: 9%;
+    text-align: center;
+
+}
+.gpgc .t1{
+    color: black;
+    margin-left: 9%;
+    text-align: center;
+
+}
+.gpgc .t2{
+    color: black;
+    margin-left: 9%;
+    text-align: center;
+
+}
+
+
+
+.gpgc .con{
+    background-color: #fff;
+    color: orangered;
+    height: 45px;
+    width: 120px;
+    text-align: center;
+    padding-top: 14px;
+    border-radius: 5px;
+    font-size: medium;
+    margin-left:20%;
+    font-weight: 700;
+}
+.footer{
+    /* background-color: black; */
+    margin-bottom: -20px;
+    background: linear-gradient(to right, black, orangered);
+}
+	 	
+
+.social{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    justify-content: space-around;
+    padding-right: 25px;
+}
+
+.social a {
+	font-size: 20px;
+	display: inline-block;
+	color: whitesmoke;
+	width: 25px;
+	padding: 10px;
+	border-radius: 8px;
+
+}
+
+
+.footer ul {
+	list-style: none;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.footer ul li {
+	display: inline-block;
+	padding: 0px 15px;
+}
+
+.footer ul li a {
+	text-decoration: none;
+	color: whitesmoke;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.footer ul li a:hover{
+	color: black;
+}
+
+
+.copy-right{
+	text-align: center;
+	padding-bottom: 30px;
+
+}
+
+.Menu .food-item .details .details-sub>h5>i{
+    color: orange;
+}
